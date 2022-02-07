@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+body {
+background-color:wheat;   
+}
+.header {
+    background-color: black;
+}
+.container {
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_img:hover {
+    filter: invert(51%) sepia(38%) saturate(891%) hue-rotate(47deg) brightness(99%) contrast(84%);/*green*/
+    cursor: pointer;
+    transition: .3s linear;
+}
+.list {
+    display: flex;
+}
+.item_list_header {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Yellowtail', cursive;
+
+    padding: 20px 15px;
+    transition: .3s linear;
+}
+.item_list_header:hover {
+    color: #61a121;
+    cursor: pointer;
+}
+.item_list_header:focus {
+    color: rgb(97, 161, 33);
+}
+/* -------------main------------- */
+.video_content {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_play {
+    position: absolute;
+
+    background: url(assets/svg/play.svg) 
+    center no-repeat;
+
+    border: 5px solid gray;
+    border-radius:100% ;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.btn_play.open{
+background-image: url(assets/svg/pause.svg);
+}
+.btn_play:hover {
+    border: 5px solid rgb(194, 189, 189);
+}
+.img_nature {
+    max-height: 81.5vh;
+    width: 100%; 
+    object-fit: cover;
+    object-position: center;
+}
+/* ------------footer------------- */
+
+.footer {
+    background-color: black;
+}
+.box_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.github {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 15px;
+}
+.year {
+    padding: 0 7px;
+}
+.link__github {
+    color: white;
+    transition: .3s linear;
+}
+.link__github:hover {
+    filter: invert(51%) sepia(38%) saturate(891%) hue-rotate(47deg) brightness(99%) contrast(84%);/*green*/
+}
+.img_footer {
+    width: 150px;
+    transition: .3s linear;
+}
+.img_footer:hover {
+    filter: invert(51%) sepia(38%) saturate(891%) hue-rotate(47deg) brightness(99%) contrast(84%); /*green*/
+    } 
+
+@media (max-width:767px) {
+    .item_list_header {
+        font-size: 16px;
+    }  
+}
+@media (max-width:575px) {
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item_list_header {
+        padding: 10px 20px;
+    }
+    .btn_play {
+        width: 70px;
+        height: 70px;
+    }
+}
