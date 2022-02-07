@@ -1,2 +1,2 @@
-https://rolling-scopes-school.github.io/alex77784-JSFEPRESCHOOL/JS30/
+https://Alex77784.github.io
 Private repository for @alex77784
